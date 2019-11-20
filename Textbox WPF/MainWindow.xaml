@@ -1,0 +1,19 @@
+﻿<Window x:Class="Textbox_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Textbox_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="346.063" Width="250">
+    <StackPanel>
+
+        <ToolBar>
+            <Button Click="BtnBrowse_Click" Content="Check" />
+        </ToolBar>
+        
+        <TextBox SpellCheck.IsEnabled="True" Height="50" Width="250" HorizontalAlignment="Left" Name="textbox" TextWrapping="Wrap"/>
+
+        <ListBox Name="listBox" Width="250" HorizontalAlignment="Left" Height="240" SelectionChanged="ListBox_SelectionChanged"/>
+    </StackPanel>
+</Window>
